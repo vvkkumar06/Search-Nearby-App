@@ -1,0 +1,27 @@
+{
+  "name": "searchnearbyapp",
+  "version": "1.0.0",
+  "description": "search anything you want",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvkkumar06/Search-Nearby-App.git"
+  },
+  "keywords": [
+    "search",
+    "anything",
+    "nearby",
+    "hotels",
+    "resturant",
+    "places"
+  ],
+  "author": "Vivek Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvkkumar06/Search-Nearby-App/issues"
+  },
+  "homepage": "https://github.com/vvkkumar06/Search-Nearby-App#readme"
+}
