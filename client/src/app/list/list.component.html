@@ -1,0 +1,61 @@
+<!-- <p *ngFor="let d of searchData[0]">{{d.name}}</p> -->
+<div class="container">
+
+    <div class="row">
+                
+        <!--Grid column-->
+        <div class="col-md-12">
+            
+
+            <!--Shopping Cart table-->
+            <div class="table-responsive">
+                <table class="table product-table" *ngIf="noData()">
+                    <!--Table head-->
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Name
+                                    <span class="chip">
+                                        <i class="fa fa-sort-up"  *ngIf="!sortByname" (click)="sortByName()" ></i>
+                                        <i class="fa fa-sort-down" *ngIf="sortByname" (click)="sortByName()" ></i>
+                                    </span>
+                            </th>
+                            <th>Address</th>
+                            <th>Rating
+                                    <span class="chip">
+                                            <i class="fa fa-sort-up" *ngIf="!sortByrating" (click)="sortByRating()" ></i>
+                                            <i class="fa fa-sort-down" *ngIf="sortByrating" (click)="sortByRating()" ></i>
+                                     </span>
+                            </th>
+                        </tr>
+                    </thead>
+                    <!--/Table head-->
+
+                    <!--Table body-->
+                    <tbody>
+
+                        <!--First row-->
+                        <tr  *ngFor="let d of searchData[0] | orderBy: order : reverse" >
+                            <th scope="row">
+                                <img src="{{d.icon}}" width="100px" height="100px" alt="" class="img-fluid">
+                            </th>
+                            <td>
+                                <h5><strong>{{d.name}}</strong></h5>
+                            </td>
+                            <td><p>{{d.address}}</p></td>
+                            <td>{{d.rating}}</td>
+                        </tr>
+                        <!--/First row-->
+               
+
+                    </tbody>
+                    <!--/Table body-->
+                </table>
+                <p *ngIf="!noData()" class="text-center mt-5 mb-5">Looks like you have not searched anything. Search anything you want example:- "colleges in delhi"</p>
+            </div>
+
+        </div>
+        <!--Grid column-->
+
+    </div>
+    </div>

@@ -1,0 +1,5 @@
+
+<app-header></app-header>
+<app-search (searchString)="getResult($event)" ></app-search>
+<app-list [inSearchData]="[searchData]"></app-list>
+<app-footer></app-footer>
