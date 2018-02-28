@@ -5,7 +5,7 @@ import { Observable } from 'rxjs/Observable';
 
 @Injectable()
 export class SearchnearbyService {
-  url: string = "http://localhost:3000/api/search/";
+  url: string = "/api/search/";
   
   constructor(private _http: HttpClient) { }
 
