@@ -21,17 +21,19 @@
                             </div>
                             <input  #search 
                             (keyup.enter)="onSearchBtn(search.value)"
-                            type="text" class="form-control input-custom" placeholder="Search Title" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            type="text" class="form-control input-custom" placeholder="Search Here" aria-label="Recipient's username" aria-describedby="basic-addon2">
                             <div class="input-group-append">
                                 <button (click)="onSearchBtn(search.value)"
                                 class="btn btn-lg btn-primary m-0  waves-effect waves-light" type="button">Search</button>
                             </div>
                         </div>
-                        <!--
-                        <div class="col">
-                            <input type="text" class="form-control input-custom" placeholder="Search Title">
-                        </div>
-                    -->
+                        <div class="tags">
+                                <label class="text-white mr-2">Popular Search tags:</label>
+                                <span class="badge badge-primary">School in Delhi</span>
+                                <span class="badge badge-primary">Restaurants in Goa</span>
+                                <span class="badge badge-primary">Top Hotels in Delhi</span>
+                                <span class="badge badge-primary">Parks in Bangalore</span>
+                            </div>
                     </div>
                 </div>
             </div>

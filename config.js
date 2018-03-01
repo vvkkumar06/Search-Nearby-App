@@ -1,4 +1,4 @@
 module.exports = {
-    key: "AIzaSyBGOxUTl6EHAhKuSJiGOOu5BGn_xQUu8mc",
+    key: "AIzaSyB07BVkUDoEQdhoE-3P77y6UcPBQXz4Y94",
     baseUrl: "https://maps.googleapis.com/maps/api/place/textsearch/json?"
 }
