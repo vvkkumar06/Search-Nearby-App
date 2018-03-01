@@ -9,7 +9,6 @@ import  { SearchData } from './search';
 })
 export class AppComponent implements OnInit{
   searchData: SearchData[]=[];
-  
 
   constructor(private _searchService: SearchnearbyService){}
 
